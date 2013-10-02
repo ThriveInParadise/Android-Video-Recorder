@@ -1,0 +1,21 @@
+﻿<UserControl x:Class="AVU.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" xmlns:sdk="http://schemas.microsoft.com/winfx/2006/xaml/presentation/sdk" Loaded="UserControl_Loaded" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" d:DesignHeight="468" d:DesignWidth="712">
+
+    <Grid x:Name="LayoutRoot" Background="White" Width="Auto" Height="Auto">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="450*" />
+            <RowDefinition Height="3*" />
+        </Grid.RowDefinitions>
+        <Button Content="Record" Height="23" HorizontalAlignment="Left" Margin="12,12,0,0" Name="RecordButton" VerticalAlignment="Top" Width="75" IsEnabled="False" Click="RecordButton_Click" />
+        <Button Content="Pause" Height="23" HorizontalAlignment="Left" Margin="12,41,0,0" Name="PauseButton" VerticalAlignment="Top" Width="75" IsEnabled="False" Click="PauseButton_Click" />
+        <Button Content="Stop" Height="23" HorizontalAlignment="Left" Margin="12,70,0,0" Name="StopButton" VerticalAlignment="Top" Width="75" IsEnabled="False" Click="StopButton_Click" />
+        <Image HorizontalAlignment="Left" Margin="104,12,0,9" Name="imageViewer" Stretch="Uniform" Width="324" />
+        <TextBox Margin="434,12,12,9" Name="labelDetailLog" Text="log..." IsEnabled="True" TextWrapping="NoWrap" HorizontalScrollBarVisibility="Auto" IsReadOnly="True" VerticalScrollBarVisibility="Auto" />
+        <sdk:Label Height="22" HorizontalAlignment="Left" Margin="12,110,0,0" Name="labelFrameRate" VerticalAlignment="Top" Width="75" Content="Frame Rate:" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="12,127,0,0" Name="FrameRateTextBox" VerticalAlignment="Top" Width="75" IsEnabled="False" Text="5" />
+    </Grid>
+</UserControl>
